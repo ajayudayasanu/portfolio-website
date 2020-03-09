@@ -1,5 +1,26 @@
-$color: pink;
-$newcolor: #f4e2e4;
+@import 'config';
+@import 'utilities';
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  background: $color;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+#header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: #fff;
+  }
+}
+
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
 }
